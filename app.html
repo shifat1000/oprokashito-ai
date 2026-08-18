@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="bn"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>অপ্রকাশিত</title><link rel="stylesheet" href="css/style.css">
+<script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+<script defer src="js/config.js"></script><script defer src="js/chat.js"></script>
+</head><body><div class="app">
+<aside id="sidebar" class="sidebar"><div class="brand"><span class="brand-mark small">অ</span><b>অপ্রকাশিত</b></div>
+<button id="newChat" class="new-chat">＋ New Chat</button><div class="session-note">🧠 Permanent Memory: OFF<br><small>শুধু বর্তমান session-এর context ব্যবহার হবে।</small></div>
+<div class="side-bottom"><button id="logout">↪ Logout</button></div></aside>
+<section class="chat-area"><header class="topbar"><button id="menu" class="icon-btn">☰</button>
+<div><strong>অপ্রকাশিত</strong><small>তোমার ব্যক্তিগত AI Assistant</small></div><button id="clear" class="icon-btn">⌫</button></header>
+<div id="messages" class="messages"><div class="welcome"><div class="brand-mark">অ</div><h2>অপ্রকাশিত</h2><p>যা বলা যায় না, তা বোঝার জন্য।</p></div></div>
+<form id="chatForm" class="composer"><textarea id="prompt" rows="1" placeholder="অপ্রকাশিতকে কিছু জিজ্ঞেস করো..." required></textarea>
+<input id="file" type="file" accept=".txt,.pdf,.doc,.docx,image/*" hidden><button type="button" id="attach" class="icon-btn">📎</button>
+<button type="button" id="voice" class="icon-btn">🎙</button><button id="send" class="send">➤</button></form>
+<div id="status" class="status-line"></div></section></div></body></html>
